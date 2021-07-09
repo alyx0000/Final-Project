@@ -1,0 +1,8 @@
+@media (max-width: 768px){
+    .nav-wrp{
+        display: none;
+    }
+    .btn-wrp{
+        display: block;
+    }
+}

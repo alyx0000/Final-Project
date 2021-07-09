@@ -1,0 +1,115 @@
+body{
+    font-family: 'Ubuntu';
+}
+/* header */
+header{
+    background-color: #191919;
+    padding: 2.125em;
+}
+.logo{
+    margin-right: 3em;
+}
+.hdr-wrp{
+    max-width: 1092px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.nav-wrp{
+    max-width: 930px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-ul-lft{
+    max-width: 325px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-ul-rght{
+    max-width: 142px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-wrp a{
+    color: white;
+    font: 1rem bold, 'Ubuntu';
+    transition: 0.3s;
+}
+.nav-wrp a:hover{
+    opacity: 65%;
+    font-size: 0.99rem;
+}
+/* burger */
+.btn-wrp{
+    display: none;
+}
+.tgl-btn{
+	width: 2.4rem;
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+    padding: 2px 2px 2px 3px;
+	cursor: pointer;
+}
+.tgl-btn span{
+    width: 100%;
+	height: 3px;
+	background-color: white;
+	transition: 0.15s ease-out;
+}
+.toggle span:nth-child(1){
+    transform: scale(0.9) rotate(-45deg) translate(-6px, 4px);
+}
+.toggle span:nth-child(2){
+    display: none;
+}
+.toggle span:nth-child(3){
+    transform: scale(0.9) rotate(45deg) translate(-6px, -4px);
+}
+/* header end */
+/* section 1 */
+body{
+    background-image: url(../images/coral.jpg);
+    background-position: 0 20px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.sec1-wrp{
+    max-width: 1092px;
+    width: 95%;
+    margin: 4.18em auto;
+}
+.sec1-txt{
+    max-width: 220px;
+    width: 100%;
+    color: white;
+    text-transform: capitalize;
+    line-height: 24px;
+    margin-bottom: 15.625em;
+}
+.sec1-wrp h1{
+    font: 3rem bold, 'Ubuntu';
+}
+.sec1-wrp h5{
+    font: 1.25rem medium, 'Ubuntu';
+}
+.sec1-wrp span{
+    font: 0.8rem normal, 'Ubuntu';
+}
+.MI{
+    float: right;
+}
+.MI a{
+    padding: 0.9em 3.5em;
+    color: white;
+    font: 0.8rem bold, 'Ubuntu';
+    border: 0.06em solid white;
+    text-transform: capitalize;
+}
