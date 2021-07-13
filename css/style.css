@@ -1,12 +1,16 @@
 body{
     font-family: 'Ubuntu';
 }
+.df{
+    display: flex;
+}
+.sb{
+    justify-content: space-between;
+}
 /* header */
 header{
     background-color: #191919;
     padding: 2.125em;
-    /* position: relative;
-    z-index: 3; */
 }
 .logo{
     margin-right: 3em;
@@ -44,7 +48,6 @@ header{
 }
 .nav-wrp a:hover{
     opacity: 65%;
-    font-size: 0.99rem;
 }
 /* burger */
 .btn-wrp{
@@ -75,17 +78,15 @@ header{
     transform: scale(0.9) rotate(45deg) translate(-6px, -4px);
 }
 /* header end */
-/* sec1 */
+/* section */
 .bg-img{
     background-image: url(../images/coral.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     padding: 1em 0;
-    /* position: absolute;
-    top: 0; */
 }
 .sec1-wrp{
     max-width: 1092px;
@@ -113,26 +114,29 @@ header{
 }
 .MI{
     position: absolute;
-    right: 0;
-    margin-top: 25em;
+    right: 5px;
+    bottom: -400px;
 }
 .MI a{
     padding: 0.9em 3.5em;
     color: white;
-    font: 0.8rem bold, 'Ubuntu';
+    font-size: 0.8rem;
+    font-weight: bold;
     border: 0.06em solid white;
     text-transform: capitalize;
 }
 .MI a:hover{
-    /* opacity: 65%; */
     background-color: white;
     color: black;
 }
-/* sec1 end */
+/* section end */
 /* footer */
 footer{
     background-color: white;
     padding: 1.5em 0 1.5em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 .ftr-wrp{
     max-width: 1092px;
@@ -144,13 +148,13 @@ footer{
 .ftr-lft{
     width: 167px;
 }
-.ftr-lft h6{
+.txt-style1 h6{
     color: #212121;
     font: 1rem normal, 'Ubuntu';
     text-transform: uppercase;
     margin-bottom: 0.4em;
 }
-.ftr-lft p{
+.txt-style1 p{
     color: #BDBDBD;
     font-size: 0.8rem;
     line-height: 1rem;
@@ -161,14 +165,14 @@ footer{
     display: flex;
     justify-content: space-between;
 }
-.ftr-mid h6{
+.txt-style2 h6{
     color: #BDBDBD;
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: lighter;
     margin-bottom: 0.5em;
 }
-.ftr-mid span{
+.txt-style2 span{
     color: #212121;
     font-size: 3rem;
     font-weight: 700;
@@ -179,20 +183,305 @@ footer{
 .ftr-rght h6{
     color: #BDBDBD;
     font-size: 0.8rem;
-    font-weight: 400;
+    font-weight: normal;
     text-transform: uppercase;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
     line-height: 12px;
+    letter-spacing: 0.3px;
 }
 .BN a{
     padding: 0.9em 3.5em;
     color: #CB0202;
-    font: 0.8rem bold, 'Ubuntu';
-    border: 0.06em solid #CB0202;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 0.15em solid #CB0202;
     text-transform: capitalize;
 }
 .BN a:hover{
-    background-color: black;
-    color: white;
-    border: none;
+    color: black;
+    border-color: black;
 }
+/* info-html */
+.MI-wrp{
+    max-width: 1100px;
+    width: 95%;
+    margin: 0 auto;
+}
+.MI-lft{
+    max-width: 220px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.MI-lft{
+    color: black;
+    text-transform: capitalize;
+    line-height: 1.5rem;
+}
+.MI-lft h1{
+    font: 3rem bolder, 'Ubuntu';
+    margin-bottom: 0.4em;
+    font-weight: 700;
+}
+.MI-lft h5{
+    font: 1.25rem medium, 'Ubuntu';
+    font-weight: 500;
+    margin-bottom: 0.3em;
+}
+.MI-lft span{
+    font: 0.8rem normal, 'Ubuntu';
+} 
+.BN-wrp{
+    max-width: 150px;
+}
+.BN-wrp h6{
+    color: #BDBDBD;
+    font-size: 0.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 3em 0 2em;
+    line-height: 12px;
+}
+.BN2 a{
+    padding: 0.8em 2.5em;
+    color: #CB0202;
+    font: 0.8rem bold, 'Ubuntu';
+    font-weight: bold;
+    border: 0.15em solid #CB0202;
+    text-transform: capitalize;
+}
+.BN2 a:hover{
+    border: 0.15em solid black;
+    color: black;
+}
+.MI-top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.75em;
+}
+.MI-img-wrp{
+    display: flex;
+}
+.MI-rght{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.MI-rght-top{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.MI-rt{
+    max-width: 167px;
+    width: 100%;
+}
+.Mi-rght-top1{
+    max-width: 467px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.MI-img-wrp{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+.MI-img-box{
+    max-width: 182px;
+    width: 100%;
+}
+.MI-img-box img{
+    width: 100%;
+    border-radius: 12px;
+    filter: drop-shadow(0px 10px 30px rgba(0, 42, 63, 0.5));
+}
+.MI-text{
+    color: #212121;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 24px;
+    margin-top: 4.75em;
+}
+.MI-text p{
+    margin-bottom: 1em;
+}
+.close-i{
+    font-size: 1.2rem;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+.close-i a{
+    color: black;
+}
+.close-i:hover a{
+    color: #CB0202;
+}
+/* info.html end */
+/* payment.html */
+.pay-bg-img{
+    background-image: url(../images/payment.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+.pay-wrp{
+    max-width: 1100px;
+    width: 95%;
+    margin: 0 auto;
+}
+.pay-wrp h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    padding: 1em 0;
+}
+.pay-box-wrp{
+    max-width: 700px;
+    width: 100%;
+    background-color: white;
+    padding: 3em 5.625em;
+    border-radius: 20px 0px 0px 0px;
+    position: relative;
+}
+.pay-box-wrp h2{
+    color: #212121;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 2.625em;
+}
+.pay-box-wrp1{
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+}
+.pay-card-list img:nth-child(2){
+    margin: 0 1.5em 0 1.5em;
+}
+.pay-card-list{
+    margin-bottom: 41px;
+}
+.pay-form{
+    max-width: 380px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.pay-form input{
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+}
+.inpt-stl{
+    width: 264px;
+    height: 40px;
+    padding-left: 10px;
+}
+.inpt-stl1{
+    width: 96px;
+    height: 40px;
+    padding-left: 10px;
+}
+.form-stl{
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #BDBDBD;
+}
+.checkbox{
+    margin-top: 1em;
+}
+.inpt{
+    margin-right: 10px;
+    /* vertical-align: middle; */
+}
+.check-box{
+    align-items: center;
+    vertical-align: middle;
+}
+input{
+    margin-top: 1em;
+}
+.pay-form div:nth-child(1){
+    margin-bottom: 0.8em;
+}
+.pay-booking{
+    max-width: 400px;
+    width: 100%;
+    height: 75.3vh;
+    background: #212121;
+    border-radius: 0px 20px 0px 0px;
+    padding: 3.125em 5em;
+}
+.pay-booking h2{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 2em;
+}
+.booking-list li{
+    color: #BDBDBD;
+    font-size: 0.8rem;
+    font-weight: normal;
+    line-height: 16px;
+}
+.booking-mb{
+    margin-bottom: 2.8em;
+}
+.booking-altstyle li:nth-child(1){
+    color: white;
+}
+.booking-list{
+    color: white;
+}
+.booking-altNumber li{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.btn{
+    background-color: #CB0202;
+    color: white;
+    max-width: 240px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    margin-top: 2em;
+}
+.btn:hover{
+    opacity: 90%;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+.go-back{
+    font-size: 1.2rem;
+    left: -13px;
+    top: 5.5%;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #CB0202;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.go-back a{
+    color: white;
+}
+.go-back:hover{
+    background-color: white;
+    border: 1px solid #CB0202;
+}
+.go-back:hover a{
+    color: #CB0202;
+}
+
+
+
+
+
+

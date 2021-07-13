@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/3112/3112963.png" type="image/gif" sizes="16x16">
+    <script src="https://kit.fontawesome.com/4f696a1e5d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="hdr-wrp">
+            <a class="logo" href="index.html"><img src="images/Logo.svg" alt="logo-img"></a>
+            <nav class="nav-wrp">
+                <ul class="nav-ul-lft">
+                    <li>
+                        <a href="#">Plan your trip</a>
+                    </li>
+                    <li>
+                        <a href="#">Discover</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+                <ul class="nav-ul-rght">
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign up</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="btn-wrp">
+                <div class='tgl-btn'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="pay-bg-img">
+        <div class="pay-wrp">
+            <h1>Payment options</h1>
+            <div class="df">
+                <div class="pay-box-wrp">
+                    <div class="go-back">
+                        <a href="info.html"><i class="fas fa-arrow-left"></i></a>
+                    </div>
+                    <h2>Payment method</h2>
+                    <div class="pay-box-wrp1">
+                        <div class="pay-card-list">
+                            <img src="images/PayPal.svg" alt="PayPal-img">
+                            <img src="images/Visa.svg" alt="Visa-img">
+                            <img src="images/GooglePay.svg" alt="GooglePay-img">
+                        </div>
+                            <form class="pay-form" autocomplete="on" method="POST">
+                                <div class="df sb">
+                                    <div>
+                                        <label class="form-stl" for="name">Cardholder Name</label>
+                                        <input class="inpt-stl" type="text" id="name" name="firstname" placeholder="Your Name">
+                                    </div>
+                                    <div>
+                                        <label class="form-stl" for="inputExpDate">Expiration date</label>
+                                        <input class="inpt-stl1" type="text" placeholder="MM / YY" maxlength='7'>
+                                    </div>
+                                </div>
+                                <div class="df sb">
+                                    <div>
+                                        <label class="form-stl" for="cardN">Card Number</label>
+                                        <input class="inpt-stl" type="text" class="ccFormatMonitor" id="cardN" placeholder="Your Card Number">
+                                    </div>
+                                    <div>
+                                        <label class="form-stl" for="Cvv">CVV</label>
+                                        <input class="inpt-stl1" type="password" class="cvv" id="Cvv" placeholder="CVV">   
+                                    </div>
+                                </div>
+                                <div class="check-box">
+                                    <label class="form-stl checkbox">
+                                        <input class="inpt" type="checkbox" checked="checked" name="sameadr">I accept the terms and conditions
+                                    </label>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+                <div class="pay-booking">
+                    <h2>Booking summary</h2>
+                    <div class="booking-list df sb">
+                        <ul>
+                            <div class="booking-mb">
+                                <li>Flight ticket - 1Adult</li>
+                                <li>Taxes and fees</li>
+                            </div>
+                            <div class="booking-mb booking-altstyle">
+                                <li>Subtotal</li>
+                                <li>Service charges</li>
+                            </div>
+                            <div class="booking-altstyle">
+                                <li>Total</li>
+                            </div>
+                        </ul>
+                        <ul>
+                            <div class="booking-mb">
+                                <li>$ 140</li>
+                                <li>$40</li>
+                            </div>
+                            <div class="booking-mb">
+                                <li>$140</li>
+                                <li>$10</li>
+                            </div>
+                            <div class="booking-altstyle booking-altNumber">
+                                <li>$180</li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="booking-btn">
+                        <input type="submit" value="Check Out" class="btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="js/script.js"></script>
+</body>
+</html>
