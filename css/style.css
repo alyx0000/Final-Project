@@ -390,17 +390,14 @@ footer{
     font-weight: normal;
     color: #BDBDBD;
 }
-.checkbox{
-    margin-top: 1em;
-}
 .inpt{
     margin-right: 10px;
     /* vertical-align: middle; */
 }
-.check-box{
+/* .checkbox{
+    display: flex;
     align-items: center;
-    vertical-align: middle;
-}
+} */
 input{
     margin-top: 1em;
 }
@@ -479,6 +476,137 @@ input{
 .go-back:hover a{
     color: #CB0202;
 }
+.test{
+    float: right;
+}
+/* payment.html end */
+/* blog.html */
+.blog-wrp{
+    max-width: 1100px;
+    width: 95%;
+    margin: 0 auto;
+}
+.blog1{
+  align-items: center;
+  margin: 2em 0 6em;
+}
+.blog1 h1{
+    font-size: 7.9rem;
+    font-weight: bold;
+    letter-spacing: -0.042em;
+    color: #231F20;
+}
+.blog1 span{
+    max-width: 250px;
+    width: 100%;
+    margin: 3em 0 0 4em;
+    color: #A4A4A4;
+    font-size: 1rem;
+    line-height: 18px;
+    letter-spacing: -0.5px;
+}
+.blog2 ul{
+    display: flex;
+    justify-content: space-between;
+    max-width: 550px;
+    width: 100%;
+}
+.blog2 a{
+    color: #A4A4A4;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.blog2 a:hover{
+    color: black;
+}
+.blog-active{
+    font-size: 12px;
+    font-weight: bold;
+    color: #CB0202;
+}
+.blog-dvdr{
+    height: 0.5px;
+    width: 100%;
+    background-color:#BEBEBE;
+    margin: 2.81em 0 2.81em;
+    opacity: 50%;
+}
+.blog-box-style h2{
+    color: #231F20;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+}
+.blog-box-style h2:nth-child(1){
+    margin-bottom: 3.5em;
+}
+.blog-prof{
+    display: flex;
+    align-items: center;
+    color: #231F20;
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+.blog-prof::before{
+    content: url('../images/profile1.png');
+    margin-right: 1em;
+}
+.blog-box{
+    max-width: 260px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.blog-box img{
+    margin: 0.6em 0 1.37em;
+}
+.blog-box-ftr{
+    margin-top: 1em;
+    align-items: center;
+}
+.blog-i-wrp{
+    max-width: 90px;
+    width: 100%;
+}
+.blog-box-ftr span{
+    color: #BEBEBE;
+    font-size: 0.7rem;
+}
+.trending-box-wrp{
+    flex-wrap: wrap;
+    align-items: center;
+}
+.blog-prof2::before{
+    content: url('../images/profile2.png');
+    margin-right: 1em;
+}
+.blog-prof3::before{
+    content: url('../images/profile3.png');
+    margin-right: 1em;
+}
+.blog-seeall i{
+    color: black;
+    
+}
+.blog-seeall span{
+    color: #CB0202;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 1em;
+}
+.seeall{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+}
+.blog-sec{
+    padding-bottom: 6em;
+}
+
+
+
 
 
 
