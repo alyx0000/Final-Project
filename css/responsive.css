@@ -1,3 +1,36 @@
+@media(max-width: 1140px){
+    html{
+        font-size: 15px;
+    }
+    .info-bg{
+        height: 90.9vh;
+    }
+    .info-wrp{
+        height: 86.2vh;
+    }
+    .pay-bg-img{
+        height: 90.9vh;
+    }
+    .pay-box-wrp{
+        height: 76.7vh;
+    }
+    .pay-booking{
+        height: 76.7vh;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px){
     .nav-wrp{
         display: none;
