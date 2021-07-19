@@ -8,6 +8,34 @@ body{
     justify-content: space-between;
 }
 /* header */
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    right: -800px;
+    width: 100%;
+    min-height: 100vh;
+    display: none;
+    z-index: 98;
+    background-color: #191919;
+    margin-top: 89px;
+    transition: 0.4s;
+}
+.mobile-nav.is-active{
+    right: 0;
+}
+.mobile-nav a{
+    display: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+    margin: 3em 2em;
+    width: fit-content;
+    letter-spacing: 1.1px;
+}
+.mobile-nav a:hover{
+    color: #CB0202;
+}
 header{
     background-color: #191919;
     padding: 2.125em;
@@ -24,19 +52,11 @@ header{
     align-items: center;
 }
 .nav-wrp{
-    max-width: 930px;
+    max-width: 300px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
 }
-.nav-ul-lft{
-    max-width: 325px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.nav-ul-rght{
-    max-width: 142px;
+.nav-ul{
+    max-width: 342px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -54,13 +74,12 @@ header{
     display: none;
 }
 .tgl-btn{
-	width: 2.4rem;
-	height: 30px;
+	width: 1.7rem;
+	height: 25px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-    padding: 2px 2px 2px 3px;
-	/* cursor: pointer; */
+	cursor: pointer;
 }
 .tgl-btn span{
     width: 100%;
@@ -78,7 +97,7 @@ header{
     transform: scale(0.9) rotate(45deg) translate(-6px, -4px);
 }
 /* header end */
-/* section */
+/* index page */
 .bg-img{
     background-image: url(../images/coral.jpg);
     background-repeat: no-repeat;
@@ -112,24 +131,7 @@ header{
 .sec1-wrp span{
     font: 0.8rem normal, 'Ubuntu';
 }
-.MI{
-    position: absolute;
-    right: 11px;
-    bottom: -400px;
-}
-.MI a{
-    padding: 0.9em 3.5em;
-    color: white;
-    font-size: 0.8rem;
-    font-weight: bold;
-    border: 0.06em solid white;
-    text-transform: capitalize;
-}
-.MI a:hover{
-    background-color: white;
-    color: black;
-}
-/* section end */
+/* index page end */
 /* footer */
 footer{
     background-color: white;
@@ -147,10 +149,11 @@ footer{
 }
 .ftr-lft{
     width: 167px;
+    margin-right: 2em;
 }
 .txt-style1 h6{
     color: #212121;
-    font: 1rem normal, 'Ubuntu';
+    font: 0.9rem normal, 'Ubuntu';
     text-transform: uppercase;
     margin-bottom: 0.4em;
 }
@@ -164,11 +167,12 @@ footer{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 3px;
 }
 .txt-style2 h6{
     color: #BDBDBD;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: lighter;
     margin-bottom: 0.5em;
 }
@@ -179,6 +183,7 @@ footer{
 }
 .ftr-rght{
     max-width: 155px;
+    margin-left: 2em;
 }
 .ftr-rght h6{
     color: #BDBDBD;
@@ -189,35 +194,55 @@ footer{
     line-height: 12px;
     letter-spacing: 0.3px;
 }
-.BN a{
-    padding: 0.9em 3.5em;
+.btn-style{
+    max-width: 150px;
+    width: 100%;
+    height: 40px;
+    border: 0.15em solid #CB0202;
     color: #CB0202;
     font-size: 0.8rem;
     font-weight: bold;
-    border: 0.15em solid #CB0202;
     text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.BN a:hover{
+.btn-style:hover{
     color: black;
     border-color: black;
 }
+.btn-style:hover a{
+    color: black;
+}
+.MI{
+    position: absolute;
+    right: 0.8em;
+    bottom: -400px;
+    color: white;
+    border-color: white;
+}
+.MI:hover{
+    color: #CB0202;
+    border-color: #CB0202;
+}
+/* footer end */
 /* info page */
 .info-bg{
     background-image: url(../images/coral.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 90.5vh;
+    min-height: 93.7vh;
     position: absolute;
 }
 .info-wrp{
     background-color: white;
     max-width: 1100px;
     width: 95%;
-    height: 85.4vh;
+    min-height: 88.9vh;
     margin: 3em auto;
     position: relative;
-    padding: 2em;
+    padding: 2em 2em 2em 3em;
     border-radius: 20px 20px 0 0;
 }
 .MI-lft{
@@ -325,18 +350,6 @@ footer{
 }
 .MI-text p{
     margin-bottom: 1em;
-}
-.close-i{
-    font-size: 1.2rem;
-    position: absolute;
-    top: 2%;
-    right: 2%;
-}
-.close-i a{
-    color: black;
-}
-.close-i:hover a{
-    color: #CB0202;
 }
 /* info page end */
 /* payment page */
@@ -455,10 +468,17 @@ input{
     font-size: 1.5rem;
     font-weight: bold;
 }
+.booking-btn{
+    max-width: 245px;
+    width: 100%;
+}
+.booking-btn{
+    display: flex;
+    justify-content: center;
+}
 .btn{
     background-color: #CB0202;
     color: white;
-    max-width: 240px;
     width: 100%;
     height: 40px;
     border: none;
@@ -597,6 +617,7 @@ input{
 .trending-box-wrp{
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
 .blog-prof2::before{
     content: url('../images/profile2.png');
@@ -625,7 +646,8 @@ input{
 .blog-sec{
     padding-bottom: 6em;
 }
-/* discover section */
+/* blog page end */
+/* discover page */
 .dscvr-wrp{
     max-width: 1100px;
     width: 95%;
@@ -650,6 +672,9 @@ input{
 .dscvr-box-wrp{
     flex-wrap: wrap;
 }
+.dscvr-box-wrp1 a{
+    margin: 0 1em 1em;
+}
 .dscvr-box{
     max-width: 212px;
     width: 100%;
@@ -658,16 +683,19 @@ input{
     width: 100%;
     border-radius: 7%;
 }
-.dscvr-box-wrp2 a{
+.dscvr-box-wrp1 a{
     max-width: 212px;
     width: 100%;
 }
-.dscvr-box-wrp1,
-.dscvr-box-wrp2{
+.dscvr-box-wrp1{
     max-width: 1100px;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     margin-bottom: 3em;
+}
+.disc-mrgn{
+    margin-right: 2em;
 }
 .dscvr-box h5{
     color: #000;
@@ -689,6 +717,7 @@ input{
 .dscvr-box-wrp a:hover span{
     color: #CB0202;
 }
+
 
 
 
