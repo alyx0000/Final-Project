@@ -229,15 +229,46 @@
     }
     .pay-wrp{
         width: 100%;
+    }
     /* }
     .col-resp{
         display: flex;
         flex-direction: column;
     } */
-    
+    .blog1{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .blog1 h1{
+        font-size: 6rem;
+    }
+    .blog1 span{
+        font-size: 0.9rem;
+        margin: 3em 0 0 0;
+    }
+    .dscvr-head{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .dscvr-head h1{
+        font-size: 5rem;
+        margin: 0.2em 0 0.4em;
+    }
+    .dscvr-head span{
+        font-size: 0.9rem;
+        margin: 0 0 2em 0.5em;
+    }
 }
 
+@media(max-width: 400px){
+    .trending-box-wrp{
+        flex-direction: column;
+    }
+    .seeall{
+        margin: 2em 0 0 14em;
+    }
 
+}
 
 @media(max-width: 670px){
     .trending-box-wrp .blog-box:nth-child(2){
