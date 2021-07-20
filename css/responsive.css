@@ -105,6 +105,136 @@
     .MI{
         bottom: -380px;
     }
+    .info-bg{
+        background-image: none;
+    }
+    .MI-rt{
+        display: none;
+    }
+    .BN-wrp h6{
+        display: none;
+    }
+    .MI-top{
+        flex-direction: column;
+    }
+    .info-wrp{
+        padding: 0;
+        margin: 0 auto;
+    }
+    .go-back{
+        left: 0;
+        top: 0;
+    }
+    .MI-top{
+        margin-top: 2em;
+        align-items: flex-end;
+    }
+    .MI-lft{
+        margin-bottom: 2em;
+    }
+    .MI-lft span,h5{
+        display: none;
+    }
+    .BN-wrp{
+        max-width: 400px;
+    }
+    .BN2{
+        max-width: 300px;
+        width: 100%;
+    }
+    .MI-rght-top{
+        justify-content: center;
+    }
+    .MI-img-wrp{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .MI-img-wrp div:nth-child(1),
+    .MI-img-wrp div:nth-child(2),
+    .MI-img-wrp div:nth-child(3){
+        margin-right: 0;
+    }
+    .MI-img-box{
+        margin: 2em 0 0;
+    }
+    .MI-text{
+        padding-bottom: 2em
+    }
+    .nav-wrp{
+        display: none;
+    }
+    .btn-wrp{
+        display: block;
+    }
+    .mobile-nav{
+        display: block;
+    }
+    .mobile-nav a{
+        display: block;
+    }
+    .pay-bg-img{
+        background-image: none;
+    }
+    .pay-wrp h1{
+        display: none;
+    }
+    .go-back{
+        top: 2.5em;
+        left: 0.5em;
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    .pay-box-wrp{
+        padding: 0;
+        width: 95%;
+    }
+    .pay-box-wrp h2{
+        float: right;
+        margin-top: 2em;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .pay-box-wrp1{
+        margin-top: 8em;
+        width: 95%;
+    }
+    .pay-card-list img:nth-child(2){
+        margin: 0 1em;
+    }
+    .pay-card-list{
+        display: flex;
+        justify-content: space-between;
+    }
+    .form-stl,
+    .form-stl1{
+        font-size: 0.7rem;
+    }
+    .inpt-stl{
+        width: 190px;
+    }
+    .inpt-stl1{
+        width: 80px;
+    }
+    .pay-booking{
+        width: 100%;
+        padding: 0;
+        height: 60vh;
+    }
+    .booking-list{
+        width: 95%;
+    }
+    .booking-btn{
+        width: 95%;
+    }
+    .pay-wrp{
+        width: 100%;
+    /* }
+    .col-resp{
+        display: flex;
+        flex-direction: column;
+    } */
+    
 }
 
 
@@ -119,24 +249,6 @@
 
 
 
-
-
-
-
-
-
-
-@media (max-width: 768px){
-    .nav-wrp{
-        display: none;
-    }
-    .btn-wrp{
-        display: block;
-    }
-    .mobile-nav{
-        display: block;
-    }
-    .mobile-nav a{
-        display: block;
-    }
+@media (max-width: 576px){
+   
 }
