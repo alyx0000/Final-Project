@@ -143,7 +143,7 @@ header{
 /* footer */
 footer{
     background-color: white;
-    padding: 1.5em 0 1.5em;
+    padding: 0.8em 0 0.8em;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -312,6 +312,7 @@ footer{
 }
 .MI-img-wrp{
     display: flex;
+    gap: 0.5em;
 }
 .MI-img-wrp div:nth-child(1),
 .MI-img-wrp div:nth-child(2),
@@ -711,9 +712,6 @@ input{
 .dscvr-box-wrp{
     flex-wrap: wrap;
 }
-.dscvr-box-wrp1 a{
-    margin: 0 1em 1em;
-}
 .dscvr-box{
     max-width: 212px;
     width: 100%;
@@ -731,7 +729,8 @@ input{
     width: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 3em;
+    gap: 1.5em;
+    padding-bottom: 2em;
 }
 .disc-mrgn{
     margin-right: 2em;

@@ -2,24 +2,6 @@
     html{
         font-size: 15px;
     }
-    /* .info-bg{
-        height: 90.9vh;
-    } */
-    /* .info-wrp{
-        height: 86.2vh;
-    }
-    .pay-bg-img{
-        height: 90.9vh;
-    }
-    .pay-box-wrp{
-        height: 76.7vh;
-    }
-    .pay-booking{
-        height: 76.7vh;
-    }
-    .MI{
-        right: 0;
-    } */
 }
 
 @media(max-width: 992px){
@@ -62,6 +44,9 @@
         height: 100%;
     }
 }
+
+
+
 @media(max-width: 960px){
     .trending-box-wrp{
         justify-content: space-around;
@@ -70,6 +55,17 @@
         display: none;
     }
 }
+
+
+
+@media(max-width: 670px){
+    .trending-box-wrp .blog-box:nth-child(2){
+        display: none;
+    }
+}
+
+
+
 @media(max-width: 768px){
     .sec1-txt{
         max-width: 300px;
@@ -104,9 +100,9 @@
         max-width: 480px;
         width: 100%;
     }
-    .MI{
+    /* .MI{
         bottom: -380px;
-    }
+    } */
     .info-bg{
         background-image: none;
     }
@@ -151,6 +147,7 @@
     .MI-img-wrp{
         justify-content: space-evenly;
         flex-wrap: wrap;
+        gap: 1em;
     }
     .MI-img-wrp div:nth-child(1),
     .MI-img-wrp div:nth-child(2),
@@ -223,8 +220,8 @@
     }
     .pay-booking{
         width: 100%;
-        padding: 0;
-        height: 60vh;
+        padding: 2em;
+        height: 100%;
     }
     .booking-list{
         width: 95%;
@@ -287,19 +284,5 @@
     .seeall{
         margin: 2em 0 0 14em;
     }
-
 }
 
-@media(max-width: 670px){
-    .trending-box-wrp .blog-box:nth-child(2){
-        display: none;
-    }
-}
-
-
-
-
-
-@media (max-width: 576px){
-   
-}
