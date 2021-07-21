@@ -2,10 +2,10 @@
     html{
         font-size: 15px;
     }
-    .info-bg{
+    /* .info-bg{
         height: 90.9vh;
-    }
-    .info-wrp{
+    } */
+    /* .info-wrp{
         height: 86.2vh;
     }
     .pay-bg-img{
@@ -19,7 +19,7 @@
     }
     .MI{
         right: 0;
-    }
+    } */
 }
 
 @media(max-width: 992px){
@@ -37,15 +37,17 @@
         height: 450px;
         max-width: 100%;
         border-radius: 20px 20px 0 0;
+        padding: 3em 5.625em 30em;
     }
     .pay-booking{
         max-width: 100%;
-        height: 400px;
+        height: 100%;
         border-radius: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 3.125em 5em;
     }
     .booking-list{
         max-width: 350px;
@@ -57,7 +59,7 @@
         margin-top: 1.5em;
     }
     .pay-bg-img{
-        height: 104vh;
+        height: 100%;
     }
 }
 @media(max-width: 960px){
@@ -118,12 +120,13 @@
         flex-direction: column;
     }
     .info-wrp{
-        padding: 0;
         margin: 0 auto;
+        width: 100%;
+        padding: 1em 1em 2em 1em;
     }
-    .go-back{
-        left: 0;
-        top: 0;
+    .back-info{
+        top: 0.5em;
+        left: 1em;
     }
     .MI-top{
         margin-top: 2em;
@@ -178,16 +181,17 @@
     .pay-wrp h1{
         display: none;
     }
+    .back-pay{
+        top: 2.8em;
+        left: 1em;
+    }
     .go-back{
-        top: 2.5em;
-        left: 0.5em;
         width: 35px;
         height: 35px;
         font-size: 0.9rem;
     }
     .pay-box-wrp{
         padding: 0;
-        width: 95%;
     }
     .pay-box-wrp h2{
         float: right;
@@ -210,11 +214,12 @@
     .form-stl1{
         font-size: 0.7rem;
     }
-    .inpt-stl{
-        width: 190px;
+    .pay-form2 div:nth-child(1){
+        margin-right: 1em;
     }
     .inpt-stl1{
-        width: 80px;
+        max-width: 150px;
+        width: 100%;
     }
     .pay-booking{
         width: 100%;
@@ -230,11 +235,6 @@
     .pay-wrp{
         width: 100%;
     }
-    /* }
-    .col-resp{
-        display: flex;
-        flex-direction: column;
-    } */
     .blog1{
         flex-direction: column;
         align-items: flex-start;
@@ -258,7 +258,27 @@
         font-size: 0.9rem;
         margin: 0 0 2em 0.5em;
     }
+    .login-lft{
+        display: none;
+    }
+    .login-bg{
+        background-image: none;
+    }
+    .login-sec{
+        justify-content: center;
+    }
+    .back-log{
+        left: 80px;
+        top: 2.5%;
+        position: absolute;
+    }
 }
+
+
+
+
+
+
 
 @media(max-width: 400px){
     .trending-box-wrp{

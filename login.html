@@ -15,7 +15,7 @@
 <body>
     <section class="login-bg login-sec">
         <div class="login-lft">
-            <img src="images/Logo.svg" alt="stellar-logo-img">
+            <a href="index.html"><img src="images/Logo.svg" alt="stellar-logo-img"></a>
             <h1>Go places you've dreamed of.</h1>
             <div>
                 <span>Wafer dessert danish. Powder toffee cookie jelly beans bear claw jelly-o gingerbread halvah.</span>
@@ -23,9 +23,7 @@
         </div>
         <div class="login-rght-wrp">
             <div class="login-rght">
-                <div class="go-back log-back">
-                    <a href="info.html"><i class="fas fa-arrow-left"></i></a>
-                </div>
+                <a class="go-back back-log" href="index.html"><i class="fas fa-arrow-left"></i></a>
                 <div class="log-top">
                     <span>Don't have an account?</span>
                     <span><a href="#">Sign up</a></span>
@@ -33,28 +31,29 @@
                 <div class="log-mid">
                     <h3>Sign in with</h3>
                     <div class="log-icons">
-                        <img src="images/fb-log.svg" alt="fb-icon-img">
-                        <img src="images/google-log.svg" alt="google-icon-img">
-                        <img src="images/apple-log.svg" alt="apple-icon-img">
+                        <a href="#"><img src="images/fb-log.svg" alt="fb-icon-img"></a>
+                        <a href="#"><img src="images/google-log.svg" alt="google-icon-img"></a>
+                        <a href="#"><img src="images/apple-log.svg" alt="apple-icon-img"></a>
                     </div>
                     <div class="log-dvdr-wrp">
                         <div class="login-dvdr"></div>
                         <span>OR</span>
                         <div class="login-dvdr"></div>
                     </div>
-                    <div>
-                        <form class="login" autocomplete="on" method="POST">
-                            <div class="login-container">
-                                <input type="email" placeholder="Email" name="uname" required>
-                                <input type="password" placeholder="Password" name="psw" required>
-                                <label>
-                                  <input type="checkbox" checked="checked" name="remember">Stay signed in
-                                </label>
+                    <form autocomplete="on" method="POST">
+                        <div class="login">
+                            <input type="email" placeholder="Email" name="uname" required>
+                            <input type="password" placeholder="Password" name="psw" required>
+                            <div class="log-chck">
+                                <div class="df chck">
+                                    <input type="checkbox" name="remember">
+                                    <label class="df">Stay signed in</label>
+                                </div>
                                 <span><a href="#">Forgot password?</a></span>
-                                <button type="submit">Sign in</button>
                             </div>
-                        </form>
-                    </div>
+                            <button class="signin-btn" type="submit">Sign in</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

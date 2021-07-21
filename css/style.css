@@ -7,6 +7,9 @@ body{
 .sb{
     justify-content: space-between;
 }
+.d-col{
+    flex-direction: column;
+}
 /* header */
 .mobile-nav{
     position: fixed;
@@ -38,7 +41,12 @@ body{
 }
 header{
     background-color: #191919;
-    padding: 2.125em;
+    height: 90px;
+    display: flex;
+    position: fixed;
+    padding: 0 2em 0 1em;
+    width: 100vw;
+    z-index: 100;
 }
 .logo{
     margin-right: 3em;
@@ -104,14 +112,13 @@ header{
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 90vh;
-    padding: 1em 0;
+    height: 100vh;
+    padding-top: 90px;
 }
 .sec1-wrp{
     max-width: 1100px;
     width: 95%;
     margin: 4.18em auto;
-    position: relative;
 }
 .sec1-txt{
     max-width: 220px;
@@ -119,6 +126,7 @@ header{
     color: white;
     text-transform: capitalize;
     line-height: 1.5rem;
+    margin-bottom: 2em;
 }
 .sec1-wrp h1{
     font: 3rem bold, 'Ubuntu';
@@ -215,9 +223,6 @@ footer{
     color: black;
 }
 .MI{
-    position: absolute;
-    right: 0.8em;
-    bottom: -400px;
     color: white;
     border-color: white;
 }
@@ -232,15 +237,18 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 91vh;
+    padding-top: 110px;
+    height: 100%;
     position: absolute;
 }
 .info-wrp{
     background-color: white;
     max-width: 1100px;
     width: 95%;
-    height: 86vh;
-    margin: 3em auto;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     position: relative;
     padding: 2em 2em 2em 3em;
     border-radius: 20px 20px 0 0;
@@ -356,6 +364,11 @@ footer{
 .MI-text p{
     margin-bottom: 1em;
 }
+.back-info{
+    left: -13px;
+    top: 5.5%;
+    position: absolute;
+}
 /* info page end */
 /* payment page */
 .pay-bg-img{
@@ -364,21 +377,30 @@ footer{
     background-size: cover;
     background-position: center center;
     width: 100%;
+    height: 100vh;
+    padding-top: 90px;
 }
 .pay-wrp{
     max-width: 1100px;
     width: 95%;
+    height: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.pay-resp{
+    flex: 1;
 }
 .pay-wrp h1{
     font-size: 3rem;
     color: white;
     font-weight: bold;
-    padding: 1em 0;
+    padding: 1em 0 1em;
 }
 .pay-box-wrp{
     max-width: 700px;
     width: 100%;
+    height: 100%;
     background-color: white;
     padding: 3em 5.625em;
     border-radius: 20px 0px 0px 0px;
@@ -391,7 +413,7 @@ footer{
     margin-bottom: 2.625em;
 }
 .pay-box-wrp1{
-    max-width: 380px;
+    max-width: 350px;
     width: 100%;
     margin: 0 auto;
 }
@@ -402,8 +424,12 @@ footer{
     margin-bottom: 41px;
 }
 .pay-form{
-    max-width: 380px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.pay-form2 div:nth-child(1),
+.pay-form2 div:nth-child(2){
     display: flex;
     flex-direction: column;
 }
@@ -412,12 +438,12 @@ footer{
     border-radius: 4px;
 }
 .inpt-stl{
-    width: 264px;
+    width: 100%;
     height: 40px;
     padding-left: 10px;
 }
 .inpt-stl1{
-    width: 96px;
+    width: 150px;
     height: 40px;
     padding-left: 10px;
 }
@@ -426,14 +452,17 @@ footer{
     font-weight: normal;
     color: #BDBDBD;
 }
-.inpt{
-    margin-right: 10px;
-    /* vertical-align: middle; */
-}
-/* .checkbox{
+.check-box{
     display: flex;
     align-items: center;
-} */
+}
+.checkbox{
+    margin: 0.8em 0 0 1em;
+}
+.check-box input{
+    height: 18px;
+    width: 18px;
+}
 input{
     margin-top: 1em;
 }
@@ -443,7 +472,7 @@ input{
 .pay-booking{
     max-width: 400px;
     width: 100%;
-    height: 75.3vh;
+    height: 100%;
     background: #212121;
     border-radius: 0px 20px 0px 0px;
     padding: 3.125em 5em;
@@ -452,7 +481,7 @@ input{
     font-size: 1.4rem;
     font-weight: 500;
     color: white;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 .booking-list li{
     color: #BDBDBD;
@@ -461,7 +490,7 @@ input{
     line-height: 16px;
 }
 .booking-mb{
-    margin-bottom: 2.8em;
+    margin-bottom: 3.8em;
 }
 .booking-altstyle li:nth-child(1){
     color: white;
@@ -487,7 +516,7 @@ input{
     width: 100%;
     height: 40px;
     border: none;
-    margin-top: 2em;
+    margin-top: 3em;
 }
 .btn:hover{
     opacity: 90%;
@@ -497,9 +526,6 @@ input{
 }
 .go-back{
     font-size: 1.2rem;
-    left: -13px;
-    top: 5.5%;
-    position: absolute;
     width: 40px;
     height: 40px;
     background-color: #CB0202;
@@ -509,12 +535,18 @@ input{
     align-items: center;
     color: white;
 }
+.back-pay{
+    left: -18px;
+    top: 5.5%;
+    position: absolute;
+}
 .go-back a{
     color: white;
 }
 .go-back:hover{
     background-color: white;
     border: 1px solid #CB0202;
+    color: #CB0202;
 }
 .go-back:hover a{
     color: #CB0202;
@@ -531,7 +563,8 @@ input{
 }
 .blog1{
   align-items: center;
-  margin: 2em 0 6em;
+  padding-top: 115px;
+  margin-bottom: 6em;
 }
 .blog1 h1{
     font-size: 7.9rem;
@@ -657,6 +690,7 @@ input{
     max-width: 1100px;
     width: 95%;
     margin: 0 auto;
+    padding-top: 100px;
 }
 .dscvr-head{
     align-items: center;
@@ -722,7 +756,8 @@ input{
 .dscvr-box-wrp a:hover span{
     color: #CB0202;
 }
-/* log in page */
+/* discover page end */
+/* login page */
 .login-bg{
     background-image: url(../images/payment.jpg);
     background-repeat: no-repeat;
@@ -735,12 +770,14 @@ input{
     display: flex;
 }
 .login-lft{
-    max-width: 590px;
+    max-width: 1000px;
     width: 95%;
     padding: 2em 1em;
     margin: 0 auto;
 }
 .login-lft h1{
+    max-width: 571px;
+    width: 100%;
     font-size: 4.5rem;
     font-weight: bold;
     color: white;
@@ -767,7 +804,9 @@ input{
 .login-rght{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+}
+.log-top{
+    text-align: end;
 }
 .log-top span:nth-child(1){
     color: #BDBDBD;
@@ -814,11 +853,74 @@ input{
     color: #BDBDBD;
     font-size: 10px;
 }
+.login{
+    display: flex;
+    flex-direction: column;
+}
+.login input{
+    width: 100%;
+    height: 40px;
+    padding: 1em;
+    border: 1px solid #BDBDBD;
+    color: black;
+    border-radius: 4.5px;
+}
+.log-chck{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0 2.5em;
+}
+.log-chck input{
+    height: 18px;
+    width: 18px;
+}
+.log-chck label{
+    color: #A4A4A4;
+    font-size: 0.75rem;
+    margin: 0.8em 0 0 0.8em;
+}
+.log-chck a{
+    color: #A4A4A4;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+.log-chck span{
+    margin-top: 0.5em;
+}
+.log-chck a:hover{
+    color: #212121;
+}
+.chck{
+    align-items: center;
+}
+.signin-btn{
+    width: 100%;
+    height: 40px;
+    background-color: #CB0202;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-family: 'Ubuntu';
+}
+.signin-btn:hover{
+    background-color: white;
+    border: 1px solid #CB0202;
+    color: #CB0202;
+}
+.back-log{
+    left: -18px;
+    top: 2.5%;
+    position: absolute;
+}
 
 
 
-
-/* log in page end */
+/* login page end */
 
 
 

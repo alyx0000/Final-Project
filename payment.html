@@ -25,10 +25,10 @@
                         <a href="blog.html">Blog</a>
                     </li>
                     <li>
-                        <a href="#">Login</a>
+                        <a href="login.html">Login</a>
                     </li>
                     <li>
-                        <a href="#">Sign up</a>
+                        <a href="login.html">Sign up</a>
                     </li>
                 </ul>
             </nav>
@@ -44,9 +44,6 @@
     <nav class="mobile-nav">
         <ul >
             <li>
-                <a href="#">Plan your trip</a>
-            </li>
-            <li>
                 <a href="discover.html">Discover</a>
             </li>
             <li>
@@ -55,10 +52,10 @@
         </ul>
         <ul>
             <li>
-                <a href="#">Login</a>
+                <a href="login.html">Login</a>
             </li>
             <li>
-                <a href="#">Sign up</a>
+                <a href="login.html">Sign up</a>
             </li>
         </ul>
     </nav>
@@ -67,9 +64,7 @@
             <h1>Payment options</h1>
             <div class="df pay-resp">
                 <div class="pay-box-wrp">
-                    <div class="go-back">
-                        <a href="info.html"><i class="fas fa-arrow-left"></i></a>
-                    </div>
+                    <a class="go-back back-pay" href="index.html"><i class="fas fa-arrow-left"></i></a>
                     <h2>Payment method</h2>
                     <div class="pay-box-wrp1">
                         <div class="pay-card-list">
@@ -78,20 +73,20 @@
                             <img src="images/GooglePay.svg" alt="GooglePay-img">
                         </div>
                             <form class="pay-form" autocomplete="on" method="POST">
-                                <div class="df">
-                                    <div>
+                                <div class="df d-col">
+                                    <div class="df d-col">
                                         <label class="form-stl" for="name">Cardholder Name</label>
                                         <input class="inpt-stl" type="text" id="name" name="firstname" placeholder="Your Name">
                                     </div>
-                                    <div class="tst1">
-                                        <label class="form-stl" for="inputExpDate">Expiration date</label>
-                                        <input class="inpt-stl1 test" type="text" placeholder="MM / YY">
-                                    </div>
-                                </div>
-                                <div class="df sb">
-                                    <div>
+                                    <div class="df d-col">
                                         <label class="form-stl" for="cardN">Card Number</label>
                                         <input class="inpt-stl" type="text" class="ccFormatMonitor" id="cardN" placeholder="Your Card Number">
+                                    </div>
+                                </div>
+                                <div class="df sb pay-form2">
+                                    <div>
+                                        <label class="form-stl" for="inputExpDate">Expiration date</label>
+                                        <input class="inpt-stl1 test" type="text" placeholder="MM / YY">
                                     </div>
                                     <div>
                                         <label class="form-stl" for="Cvv">CVV</label>
@@ -99,9 +94,8 @@
                                     </div>
                                 </div>
                                 <div class="check-box">
-                                    <label class="form-stl checkbox">
-                                        <input class="inpt" type="checkbox" checked="checked" name="sameadr">I accept the terms and conditions
-                                    </label>
+                                    <input type="checkbox" name="sameadr">
+                                    <label class="form-stl checkbox">I accept the terms and conditions</label>
                                 </div>
                             </form>
                     </div>
