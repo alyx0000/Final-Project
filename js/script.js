@@ -21,3 +21,6 @@ window.onload = function () {
 		mobile_menu.classList.toggle('is-active');
 	});
 }
+function myFunction() {
+	alert("Please, choose your payment method.");
+}
