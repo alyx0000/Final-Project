@@ -78,13 +78,15 @@
         text-align: center;
     }
     .ftr-rght{
-        max-width: 480px;
+        max-width: 100%;
         width: 100%;
         margin: 1.2em 0 0; 
     }
+    .ftr-mid{
+        align-self: flex-end;
+    }
     .btn-ftr-resp{
-        max-width: 480px;
-        width: 100%;
+        max-width: 100%;
     }
     .info-bg{
         background-image: none;
@@ -97,6 +99,9 @@
     }
     .MI-top{
         flex-direction: column;
+    }
+    .MI-img-box{
+        max-width: 282px;
     }
     .info-wrp{
         margin: 0 auto;
@@ -112,19 +117,20 @@
         align-items: flex-end;
     }
     .MI-lft{
-        max-width: none;
-        width: auto;
+        max-width: 100%;
         margin: 2em 0 2em;
+    }
+    .MI-lft h1{
+        align-self: flex-end;
     }
     .MI-lft span,h5{
         display: none;
     }
     .BN-wrp{
-        max-width: 400px;
+        max-width: 100%;
     }
     .BN2{
-        max-width: 400px;
-        width: 100%;
+        max-width: 100%;
     }
     .MI-rght-top{
         justify-content: center;
@@ -174,7 +180,7 @@
     }
     .pay-box-wrp{
         height: 100%;
-        padding: 0 1em 2em;
+        padding: 0 0.5em 2em;
     }
     .pay-box-wrp h2{
         float: right;

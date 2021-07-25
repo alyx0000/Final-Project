@@ -6,16 +6,18 @@ $(function(){
 	 // სლაიდის დროს რამდენი ელემნტით გადავიდეს 
 	 slidesToScroll: 1,
 	 // რომ გამოჩნდეს ღილაკები
-	 arrows: false,
+	 arrows: true,
 	 // რომ გამოჩნდეს ბურთულები
 	 dots: false,
 	 // responsiv-ის კოდი
-	 responsive: [
+	prevArrow: '<i class="fas fa-arrow-left prev"></i>',
+    nextArrow: '<i class="fas fa-arrow-right next"></i>',
+	 responsive:[
 		 {
 		    breakpoint: 768,
 		    settings: {
-			 slidesToShow: 1,
-			 slidesToScroll: 1
+			slidesToShow: 1,
+			slidesToScroll: 1
 		   }
 		 },
 		 {
