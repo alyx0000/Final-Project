@@ -1,5 +1,12 @@
 /*
 * Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
@@ -286,6 +293,9 @@ footer{
 .MI{
     color: white;
     border-color: white;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 .MI:hover{
     color: #CB0202;
@@ -377,6 +387,9 @@ footer{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 .BN2:hover{
     border: 0.15em solid black;
@@ -645,6 +658,9 @@ input{
     height: 40px;
     border: none;
     margin-top: 3em;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 .btn:hover{
     opacity: 90%;
@@ -668,6 +684,9 @@ input{
         -ms-flex-align: center;
             align-items: center;
     color: white;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 .back-pay{
     left: -18px;
@@ -759,7 +778,10 @@ input{
 .blog-box-style h2:nth-child(1){
     margin-bottom: 3.5em;
 }
-.blog-box:hover h2{
+.blog-hvr:hover img{
+    opacity: 100%;
+}
+.blog-hvr:hover h2{
     color: #CB0202;
 }
 .blog-prof{
@@ -790,6 +812,10 @@ input{
 }
 .blog-box img{
     margin: 0.6em 0 1.37em;
+    opacity: 85%;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 .blog-box-ftr{
     margin-top: 1em;
@@ -886,6 +912,7 @@ input{
 .dscvr-box img{
     width: 100%;
     border-radius: 7%;
+    opacity: 85%;
 }
 .dscvr-box-wrp1 a{
     max-width: 212px;
@@ -922,8 +949,10 @@ input{
     margin-bottom: 0.7em;
 }
 .dscvr-box-wrp1 a:hover h4,
-.dscvr-box-wrp1 a:hover span{
+.dscvr-box-wrp1 a:hover span,
+.dscvr-box-wrp1 a:hover img{
     color: #CB0202;
+    opacity: 100%;
 }
 /* discover page end */
 /* login page */
@@ -989,10 +1018,16 @@ input{
     font-size: 0.75rem;
     margin-right: 1em;
 }
-.log-top span:nth-child(2) a{
+.log-top a{
     color: #CB0202;
     font-size: 1rem;
     font-weight: bold;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.log-top a:hover{
+    color: #212121;
 }
 .log-mid h3{
     font-size: 2rem;
@@ -1010,7 +1045,7 @@ input{
         -ms-flex-pack: justify;
             justify-content: space-between;
 }
-.log-icons img{
+.log-icons a{
     padding: 1em 2em;
     -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
@@ -1106,6 +1141,9 @@ input{
     font-weight: 700;
     letter-spacing: 0.5px;
     font-family: 'Ubuntu';
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 .signin-btn:hover{
     background-color: white;
@@ -1254,5 +1292,4 @@ input{
     right: 2%;
     top: 55%;
 }
-
 
