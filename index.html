@@ -18,103 +18,65 @@
 </head>
 <body>
     <header>
-        <div class="hdr-wrp">
-            <a class="logo" href="index.html"><img src="images/Logo.svg" alt="logo-img"></a>
-            <nav class="nav-wrp">
-                <ul class="nav-ul">
-                    <li>
-                        <a href="discover.html">Discover</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                    <div class="hdr-dvdr"></div>
-                    <li>
-                        <a href="login.html">Login</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="btn-wrp" id="toggle">
-                <div class='tgl-btn'>
+        <div class="hdr_container">
+            <a href="index.html">
+                <img src="images/Logo.svg" alt="logo-img">
+            </a>
+            <nav class="hdr_navigation" id="header_nav">
+                <div class="toggle_menu" id="toggle_button">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-            </div>
+                <ul class="nav_list" id="nav_ul">
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign up</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <section>
-        <nav class="mobile-nav">
-            <ul >
-                <li>
-                    <a href="discover.html">Discover</a>
-                </li>
-                <li>
-                    <a href="blog.html">Blog</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="login.html">Login</a>
-                </li>
-            </ul>
-        </nav>
-    </section>
-    <section class="sec1-wrp0">
-        <div class="sec1-wrp">
-            <div class="sec1-txt">
-                <h1>the coral island</h1>
-                <h5>caribbean sea</h5>
-                <span>27°C Hot</span>
-            </div>
-            <a class="btn-style MI" href="info.html">more info</a>
-        </div>
-    </section>
-    <section id="slick">
-        <div class="slider multiple-items">
-            <div class="slider_item">
-                <img src="images/index1.jpg" alt="mounts-img">
-            </div>
-            <div class="slider_item">
-                <img src="images/index2.jpg" alt="island-img">
-            </div>
-            <div class="slider_item">
-                <img src="images/index3.jpg" alt="forest-img">
-            </div>
-            <div class="slider_item">
-                <img src="images/index4.jpg" alt="iceland-img">
-            </div>
+    <section class="slider_wrapper" id="slider_wrapper">
+        <div class="slider_content" id="slider_content">
+           <div class="slider_ftr" id="slider_ftr">
+                <button class="arrow_left arrow" id="arrow_left">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="arrow_right arrow" id="arrow_right">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+           </div>
         </div>
     </section>
     <footer>
-        <div class="ftr-wrp">
-            <div class="ftr-lft txt-style1">
-                <h6>statistics</h6>
-                <p>Statistics reflect the exact data, collected from authentic sources .</p>
+        <div class="footer_wrapper">
+            <div class="ftr_first">
+                <h6>STATISTICS</h6>
+                <p>Statistics reflect the exact data, collected from authentic sources.</p>
             </div>
-            <div class="ftr-mid txt-style2">
+            <div class="ftr_mid">
                 <div>
-                    <h6>flight per day</h6>
+                    <h6>COVERAGE KMS</h6>
+                    <span>15</span>
+                </div>
+                <div>
+                    <h6>FLIGHTS PER DAY</h6>
                     <span>09</span>
                 </div>
                 <div>
-                    <h6>nextflight</h6>
+                    <h6>NEXT FLIGHT</h6>
                     <span>08:15</span>
                 </div>
-                <div>
-                    <h6>coverage kms</h6>
-                    <span>15</span>
-                </div>
             </div>
-            <div class="ftr-rght">
+            <div class="ftr_last">
                 <h6>Get your ticket for the lowest price.</h6>
-                <a class="btn-style btn-ftr-resp" href="payment.html">book now</a>
+                <a href="info.html">Book Now</a>
             </div>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/slick.js"></script>
 </body>
 </html>
