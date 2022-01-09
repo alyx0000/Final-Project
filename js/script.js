@@ -1,3 +1,5 @@
+'use strict';
+
 let burgerButton = document.getElementById('toggle_button');
 let navBar = document.getElementById('nav_ul');
 

@@ -68,6 +68,10 @@
     }
 }
 @media(max-width: 768px){
+    .dash{
+        height: 1.8px;
+        width: 18px;;
+    }
     .toggle_menu{
         display: flex;
     }
@@ -149,9 +153,6 @@
         margin: 0 auto;
         width: 95%;
         padding: 1em 1em 2em 1em;
-    }
-    .info-bg{
-        padding-top: 2em;
     }
     .reverse{
         display: flex;
