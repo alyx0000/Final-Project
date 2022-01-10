@@ -150,3 +150,4 @@ arrowLeft.addEventListener('click', arrowLeftClick);
 arrowRight.addEventListener('click', arrowRightClick);
 
 setSlide();
+
