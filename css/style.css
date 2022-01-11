@@ -1265,40 +1265,92 @@ input{
 }
 
 /* Guide Page */
-.guide-wrapper{
-    line-height: 0;
-    /* position: relative; */
-}
-.guide-content_wrp{
+.guide-wrp{
     max-width: 1280px;
     width: 95%;
     margin: 0 auto;
-}
-.guide-background{
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
-.guide-content{
-    position: absolute;
-    max-width: 1280px;
-    width: 95%;
-    top: 300px;
+    padding-top: 150px;
 }
 .guide-content ul{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 3em;
 }
-.guide-list{
-    color: #fff;
+.guide-img_wrapper{
+    max-width: 150px;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 0.7em;
 }
 .guide-img{
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.guide-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #191919;
+}
+.guide-content_wrp{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #loadMore{
-    bottom: 100px;
-    position: absolute;
+    background-color: #CB0202;
+    color: white;
+    max-width: 100px;
+    width: 100%;
+    height: 40px;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    border: 0.14em solid #CB0202;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin: 4em 1.5em;
 }
+#loadMore:hover{
+    color: #cb0202;
+    border-color: #cb0202;
+    background-color: white;
+    cursor: pointer;
+}
+.guide-span_wrapper{
+    font-weight: bold;
+}
+.guide-span_wrapper span:nth-child(1){
+    margin-right: 0.3em;
+}
+.guide-email_wrapper{
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+.guide-list:hover{
+    color: #CB0202;
+    cursor: pointer;
+}
+.guide-wrp h2{
+    color: #CB0202;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    margin: -0.5em 0 2.5em;
+}
+.contact-loadmore{
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-loadmore span{
+    height: 0.5px;
+    width: 100%;
+    background-color: #BEBEBE;
+    margin: 2.81em 0 2.81em;
+    opacity: 50%;
+}
+
