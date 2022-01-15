@@ -7,6 +7,7 @@
     <title>Payment</title>
     <link rel="icon" href="https://image.flaticon.com/icons/png/512/3112/3112963.png" type="image/gif" sizes="16x16">
     <script src="https://kit.fontawesome.com/4f696a1e5d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
@@ -48,11 +49,11 @@
                             <img src="images/Visa.svg" alt="Visa-img">
                             <img src="images/GooglePay.svg" alt="GooglePay-img">
                         </div>
-                            <form class="pay-form" autocomplete="on" method="POST">
+                            <form class="pay-form" id="paymentForm" autocomplete="on" method="POST">
                                 <div class="df d-col">
                                     <div class="df d-col">
-                                        <label class="form-stl" for="name">Cardholder Name</label>
-                                        <input class="inpt-stl" type="text" id="name" name="firstname" placeholder="Your Name" required>
+                                        <label class="form-stl" for="cardHolderName">Cardholder Name</label>
+                                        <input class="inpt-stl" type="text" id="cardHolderName" name="firstname" placeholder="Your Name" required>
                                     </div>
                                     <div class="df d-col">
                                         <label class="form-stl" for="cardN">Card Number</label>
@@ -61,21 +62,24 @@
                                 </div>
                                 <div class="df sb pay-form2">
                                     <div>
-                                        <label class="form-stl" for="inputExpDate">Expiration date</label>
+                                        <label class="form-stl" for="cardExpiry">Expiration date</label>
                                         <input class="inpt-stl1 test" id="cardExpiry" type="text" placeholder="MM / YY" required>
                                     </div>
                                     <div>
-                                        <label class="form-stl" for="Cvv">CVV</label>
+                                        <label class="form-stl" for="cardCvv">CVV</label>
                                         <input class="inpt-stl1" id="cardCvv" type="password" placeholder="CVV" required>   
                                     </div>
                                 </div>
                                 <div class="check-box">
-                                    <input type="checkbox" name="sameadr">
+                                    <input type="checkbox" id="saveInfo">
                                     <label class="form-stl checkbox">I accept the terms and conditions</label>
                                 </div>
+                                <div class="booking-btn">
+                                    <button type="submit" class="btn">Submit</button>
+                                </div>
                             </form>
+                        </div>
                     </div>
-                </div>
                 <div class="pay-booking">
                     <h2>Booking summary</h2>
                     <div class="booking-list df sb">
@@ -106,15 +110,12 @@
                             </div>
                         </ul>
                     </div>
-                    <div class="booking-btn">
-                        <input onclick="myFunction()" type="submit" value="Check Out" class="btn">
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
-<script src="js/payment.js"></script>
+<script src="js/cookies.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
